@@ -17,7 +17,7 @@ You can deploy this bot anywhere.
 
 <p>
 
-<a href="https://heroku.com/deploy?template=https://github.com/piro-dev010/jk-bot">
+<a href="https://heroku.com/deploy?template=https://github.com/Jiyad777/Railway-try">
 
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 
