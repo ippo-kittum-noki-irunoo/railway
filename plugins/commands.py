@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟✅', url='https://t.me/+GYtw_Xh_RU45N2I9')
+                InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟✅', url='https://t.me/+f16LP7YW2G03MzM1')
             ],
             [
                 InlineKeyboardButton('𝗛𝗘𝗟𝗣🤚', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -47,7 +47,7 @@ async def start(client, message):
             InlineKeyboardButton('𝗚𝗥𝗢𝗨𝗣👥', url='https://t.me/+iiJvauon_6Q1Njk1'),
             InlineKeyboardButton('𝗦𝗨𝗕-𝗚𝗥𝗢𝗨𝗣➕', url='https://t.me/+NEwBKqnZqfljNTY1')
             ],[
-            InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟✅', url='https://t.me/+GYtw_Xh_RU45N2I9'),
+            InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟✅', url='https://t.me/+f16LP7YW2G03MzM1'),
             InlineKeyboardButton('𝗦𝗨𝗕-𝗖𝗛𝗔𝗡𝗡𝗘𝗟➕', url='https://t.me/+Vmb--OQWTuIxMzYy')
             ],[
             InlineKeyboardButton('𝗛𝗘𝗟𝗣🤚', 'movss'),
@@ -96,7 +96,7 @@ async def start(client, message):
             InlineKeyboardButton('𝗚𝗥𝗢𝗨𝗣👥', url='https://t.me/+iiJvauon_6Q1Njk1'),
             InlineKeyboardButton('𝗦𝗨𝗕-𝗚𝗥𝗢𝗨𝗣➕', url='https://t.me/+NEwBKqnZqfljNTY1')
             ],[
-            InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟✅', url='https://t.me/+GYtw_Xh_RU45N2I9'),
+            InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟✅', url='https://t.me/+f16LP7YW2G03MzM1'),
             InlineKeyboardButton('𝗦𝗨𝗕-𝗖𝗛𝗔𝗡𝗡𝗘𝗟➕', url='https://t.me/+Vmb--OQWTuIxMzYy')
             ],[
             InlineKeyboardButton('𝗛𝗘𝗟𝗣🤚', 'movss'),
