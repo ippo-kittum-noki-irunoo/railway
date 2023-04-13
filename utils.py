@@ -11,6 +11,7 @@ import os
 from datetime import datetime
 from typing import List
 from database.users_chats_db import db
+from database.fsub_db import Fsub_DB
 from bs4 import BeautifulSoup
 import requests
 
@@ -41,6 +42,13 @@ class temp(object):
     SETTINGS = {}
 
 async def is_subscribed(bot, query):
+    if not AUTH_CHANNEL:
+        return True
+    user = await Fsub_DB().get_user(query.from_user.id)
+    if user:
+        return True
+    else:
+        pass
     try:
         user = await bot.get_chat_member(AUTH_CHANNEL, query.from_user.id)
     except UserNotParticipant:
