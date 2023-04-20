@@ -359,11 +359,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 return
             else:
                 await client.send_cached_media(
-                    chat_id=query.from_user.id,
-                    file_id=file_id,
-                    caption=f_caption,
-                    protect_content=True if ident == "filep" else False 
-                )
+        chat_id=message.from_user.id,
+        file_id=file_id,
+        caption=f_caption,
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 👑', url='T.me/Jk_Ser'),
+                                              InlineKeyboardButton('𝙹𝙾𝙸𝙽 𝙼𝙰𝙸𝙽 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/+7LkiblDWkCgwNDU1') ] ] ),                                           
+        protect_content=True if pre == 'filep' else False,
+        )
                 await query.answer('Check PM, I have sent files in pm', show_alert=True)
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !', show_alert=True)
