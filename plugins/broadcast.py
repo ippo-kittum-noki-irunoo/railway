@@ -1,4 +1,3 @@
-
 from pyrogram import Client, filters
 import datetime
 import time
@@ -13,7 +12,7 @@ async def verupikkals(bot, message):
     users = await db.get_all_users()
     b_msg = message.reply_to_message
     sts = await message.reply_text(
-        text='Broadcasting your messages...'
+        text='ഇപ്പൊ എല്ലാവരെയും അറിയിച്ചേക്കാം...😁...'
     )
     start_time = time.time()
     total_users = await db.total_users_count()
@@ -23,12 +22,7 @@ async def verupikkals(bot, message):
     failed =0
 
     success = 0
-    temp = 0 # temp var
     async for user in users:
-        if temp == 26: # after 25 msgs
-            await sts.edit(f"Broadcast in progress:\n\nTotal Users {total_users}\nCompleted: {done} / {total_users}\nSuccess: {success}\nBlocked: {blocked}\nDeleted: {deleted}\n\nSleeping for 2 seconds !") # editing msg
-            await asyncio.sleep(2) # sleeping for 2 seconds 😴
-            temp = 0 # resetting temp 
         pti, sh = await broadcast_messages(int(user['id']), b_msg)
         if pti:
             success += 1
@@ -40,7 +34,7 @@ async def verupikkals(bot, message):
             elif sh == "Error":
                 failed += 1
         done += 1
-        temp +=1 # incrementing with 1
+        await asyncio.sleep(2)
         if not done % 20:
             await sts.edit(f"Broadcast in progress:\n\nTotal Users {total_users}\nCompleted: {done} / {total_users}\nSuccess: {success}\nBlocked: {blocked}\nDeleted: {deleted}")    
     time_taken = datetime.timedelta(seconds=int(time.time()-start_time))
