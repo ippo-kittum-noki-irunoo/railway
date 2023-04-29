@@ -11,3 +11,4 @@ bs4
 imdbpy==2021.4.18
 PyPDF2
 git+https://github.com/cinemagoer/cinemagoer
+gTTS
